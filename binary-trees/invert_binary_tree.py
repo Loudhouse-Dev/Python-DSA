@@ -11,8 +11,10 @@
 #          8   9
 
 def invertBinaryTree(tree):
+  #return if root is null
   if tree is None:
     return
+  #invoke helper to swap nodes
   swapLeftAndRightNodes(tree)
   invertBinaryTree(tree.left)
   invertBinaryTree(tree.right)
