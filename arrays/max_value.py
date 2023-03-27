@@ -3,7 +3,11 @@
 #Assume that the array is non-empty.
 
 def max_value(nums: list):
-  max = -9999999
+  max = float('-inf')
   
-  for idx in range(len(nums)):
+  for num in nums:
+    if num > max:
+      max = num
+      
+  return max
     
